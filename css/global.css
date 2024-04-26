@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+
+    --main-color: #d3ad7f;
+    --primary: #13131a;
+    --main-color: #ffffff;
+    --accent: 0.1rem solid rgba(205, 182, 110, 0.3);
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.header {
+background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 7%;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+    max-width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.header .logo:hover {
+    transition: all 0.9s ease;
+    text-shadow: 2px 2px 4px #bfbbbb;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: gray;
+    padding-bottom: 0.5rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--primary);
+}
+
+.footer .share {
+    padding: 0.8rem 0;
+}
+
+.footer .share a {
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin: 0.8rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.footer .share a:hover {
+    background-color: var(--accent);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
