@@ -35,6 +35,15 @@ html::-webkit-scrollbar {
     width: .8rem;
 }
 
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
 section {
     padding: 2rem 7%;
 }
@@ -50,7 +59,6 @@ section {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-
 
 .bctn:hover {
     opacity: 0.9;
