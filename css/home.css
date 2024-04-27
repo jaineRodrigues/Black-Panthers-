@@ -20,7 +20,7 @@
 }
 
 .home .content p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1.8;
     padding: 1.4rem 0;
     color: #000000;
@@ -39,7 +39,6 @@
     margin-top: 15rem;
 }
 
-
 .about .row .image {
     flex: 1 1 45rem;
 }
@@ -56,13 +55,13 @@
 }
 
 .about .row .content h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #455a43;
     text-transform: uppercase;
 }
 
 .about .row .content p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #455a43;
     padding: 1.4rem 0;
     line-height: 1.8;
