@@ -32,8 +32,17 @@
           <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email" />
         </div>
 
+        <div class="custom-input-group">
+          <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
+        </div>
+
+        <div class="custom-input-group">
+          <label for="mobile">Celular</label><input id="mobile" maxlength="40" name="mobile" size="20" type="text" />
+        </div>
+
         <div class="custom-input-group ">
-          <input id="company" maxlength="40" name="company" size="20" type="text" required placeholder="Empresa *" />
+          <input id="company" maxlength="40" name="company" size="20" type="text" required
+            onchange="toggleDocumentType()" required placeholder="Empresa *" />
         </div>
         <div class="custom-input-group ">
           <select id="lead_type" name="lead_type" required>
@@ -44,7 +53,13 @@
         </div>
 
         <div class="custom-input-group ">
-          <input id="cpf" maxlength="16" name="cpf" size="20" type="text" required placeholder="CPF *" />
+          <input id="cpf" maxlength="16" name="cpf" size="20" type="text" required placeholder="CPF *"
+            style="display: none;" />
+        </div>
+
+        <div class="custom-input-group">
+          <input id="00Naj000001wJks" maxlength="18" name="00Naj000001wJks" size="20" type="text" required
+            placeholder="CNPJ:*" style="display: none;" />
         </div>
 
         <div class="custom-input-group ">
