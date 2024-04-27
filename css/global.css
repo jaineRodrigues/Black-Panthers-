@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --secondary: #f7debf;
+    --secondary: #5a6b63;
     --primary: #13131a;
-    --main-color: #ebeaea;
+    --main-color: #faf9f9;
     --accent: gray;
 }
 
@@ -21,6 +21,7 @@
 
 body {
     background-color: var(--main-color);
+    overflow-x: hidden;
 }
 
 html {
@@ -38,19 +39,20 @@ section {
     padding: 2rem 7%;
 }
 
-.btn {
-    font-weight: 700;
-    font-size: 2rem;
+.bctn {
+    font-weight: 400;
+    font-size: 1.6rem;
     display: inline-block;
     padding: 0.5rem 2rem;
-    color: var(--secondary);
-    border-radius: 4px;
+    background-color: var(--secondary);
+    color: var(--main-color);
+    border-radius: 0 4px 0 4px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 
-.btn:hover {
+.bctn:hover {
     opacity: 0.9;
 }
 
@@ -110,7 +112,8 @@ section {
 
 .footer {
     text-align: center;
-    background-color: var(--primary);
+    background-color: #43504a;
+    ;
 }
 
 .footer .share {

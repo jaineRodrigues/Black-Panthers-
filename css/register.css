@@ -1,0 +1,116 @@
+@import url('global.css');
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title-register {
+  text-align: center;
+  color: #455a43;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.custom-container-register {
+  width: 45%;
+}
+
+.form-box-register {
+  padding: .8rem 2rem;
+  border-radius: 4px;
+}
+
+.form-box-register form {
+  margin: 2rem 0;
+}
+
+.custom-input-group {
+  margin-bottom: 1rem;
+}
+
+.custom-input-group input,
+.custom-input-group button,
+.custom-input-group select {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.custom-input-group select option {
+  font-size: 1.4rem;
+}
+
+.custom-input-group input:hover {
+  border: 1px solid #616fc2;
+}
+
+.custom-input-group select:hover {
+  border: 1px solid #616fc2;
+}
+
+.custom-input-group input,
+.custom-input-group select {
+  width: 100%;
+  border-radius: 4px;
+  height: 3rem;
+  border: 1px solid #92909b;
+  font-size: 1.1rem;
+  transition: border-color 0.4s ease;
+  padding-inline-start: 0.7rem;
+}
+
+.bctn-register {
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: .8rem 5rem;
+  background-color: var(--secondary);
+  color: var(--main-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  float: right;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.bctn-register:hover {
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  .custom-container-register {
+    width: 50%;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-box-register {
+    width: 100%;
+  }
+
+  .form-box-register h1 {
+    font-size: 1.5rem;
+  }
+
+  .custom-input-group input,
+  .custom-input-group button,
+  .custom-input-group select {
+    font-size: 1.2rem;
+  }
+
+  .custom-input-group select option {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 545px) {
+  .custom-container-register {
+    width: 80%;
+  }
+}

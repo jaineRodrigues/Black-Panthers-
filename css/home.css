@@ -1,10 +1,10 @@
 @import url('global.css');
 
 .home {
-    min-height: 40vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    background-size: cover;
+    background: url('../imagens/home.avif') no-repeat;
     background-position: center;
 }
 
@@ -19,23 +19,10 @@
 }
 
 .home .content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     padding: 1rem 0;
     color: #444040;
-}
-
-
-.bctn {
-    font-weight: 700;
-    font-size: 1.4rem;
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: #d8c2a5;
-    color: #252424;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
 
 .about .row {
@@ -43,11 +30,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fffbfb;
+    background-color: #fafafae1;
     flex-wrap: wrap;
+    border-bottom: 1px solid #beb6b9;
     border-radius: 2px;
-    margin-bottom: 20rem;
-    margin-top: 5rem;
+    margin-bottom: 15rem;
+    margin-top: 15rem;
 }
 
 .about .row .image {
@@ -57,6 +45,7 @@
 .about .row .image img {
     width: 100%;
     flex: 1 1 45rem;
+    border-radius: 2px;
 }
 
 .about .row .content {
@@ -66,13 +55,14 @@
 
 .about .row .content h3 {
     font-size: 2rem;
-    color: #353434;
+    color: #455a43;
+    text-transform: uppercase;
 }
 
 .about .row .content p {
-    font-size: 1.6rem;
-    color: #353434;
-    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #455a43;
+    padding: 1.4rem 0;
     line-height: 1.8;
 }
 
@@ -84,7 +74,7 @@
 }
 
 .menu .box-container .box {
-    background-color: #acabab;
+    background-color: #e6e6e6;
     text-align: center;
     padding: 1rem 1rem;
 }
@@ -106,7 +96,7 @@
 .menu .box-container .box .stars i {
     font-size: 1.5rem;
     padding: .4rem;
-    color: var(--secondary);
+    color: #c0ab50;
 }
 
 span {
@@ -116,11 +106,19 @@ span {
     margin-bottom: .2rem;
 }
 
+.title {
+    color: #455a43;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
 
 @media (max-width: 768px) {
     .about {
         flex-direction: column;
-        align-items: flex-start[];
+        align-items: flex-start;
     }
 
     .about .row {
@@ -147,6 +145,11 @@ span {
 }
 
 @media (max-width: 320px) {
+    .home {
+        min-height: 40vh;
+        background: none;
+    }
+
     .home .home-content h3 {
         font-size: 1rem;
         font-weight: 700;
