@@ -38,6 +38,7 @@
     margin-top: 15rem;
 }
 
+
 .about .row .image {
     flex: 1 1 45rem;
 }
@@ -66,7 +67,6 @@
     line-height: 1.8;
 }
 
-
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -77,6 +77,10 @@
     background-color: #e6e6e6;
     text-align: center;
     padding: 1rem 1rem;
+}
+
+.menu .box-container .box:hover {
+    background-color: #f3fdf0;
 }
 
 .menu .box-container .box p {
