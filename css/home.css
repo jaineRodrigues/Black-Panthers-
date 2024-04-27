@@ -1,0 +1,159 @@
+@import url('global.css');
+
+.home {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #474646;
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #444040;
+}
+
+
+.bctn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #d8c2a5;
+    color: #252424;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about .row {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffbfb;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    margin-bottom: 20rem;
+    margin-top: 5rem;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    flex: 1 1 45rem;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 2rem;
+    color: #353434;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #353434;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    background-color: #acabab;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.menu .box-container .box p {
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #252525;
+}
+
+.menu .box-container .box .product {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+
+.menu .box-container .box .stars i {
+    font-size: 1.5rem;
+    padding: .4rem;
+    color: var(--secondary);
+}
+
+span {
+    color: #252525;
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: .2rem;
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: flex-start[];
+    }
+
+    .about .row {
+        padding: 0;
+        margin-bottom: 10rem;
+        margin-top: 2rem;
+    }
+
+
+    .about .about-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about .about-content h3 {
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    .about .about-content p {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .home .home-content h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .about .about-content p {
+        font-size: 1rem;
+
+    }
+}

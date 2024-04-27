@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+  <h1>Cadastrar</h1>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Daj000005jLod"
+    method="POST">
+    <input type="hidden" name="oid" value="00Daj000005jLod">
+    <input type="hidden" name="retURL" value="http://www.google.com">
+
+    <label for="first_name">Primeiro Nome:</label>
+    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+    <label for="last_name">Sobrenome <span style="color: red;">*</span>:</label>
+    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
+
+    <label for="email">Email:</label>
+    <input id="email" maxlength="80" name="email" size="20" type="email" /><br>
+
+    <label for="company">Empresa <span style="color: red;">*</span>:</label>
+    <input id="company" maxlength="40" name="company" size="20" type="text" required /><br>
+
+    <label for="lead_type">Tipo de Lead <span style="color: red;">*</span>:</label>
+    <select id="lead_type" name="lead_type" required>
+      <option value="">-- Selecione --</option>
+      <option value="Pessoa Física">Pessoa Física</option>
+      <option value="Pessoa Jurídica">Pessoa Jurídica</option>
+    </select><br>
+
+    <label for="cpf">CPF <span style="color: red;">*</span>:</label>
+    <input id="cpf" maxlength="16" name="cpf" size="20" type="text" required /><br>
+
+    <label for="country">País <span style="color: red;">*</span>:</label>
+    <input id="country" maxlength="40" name="country" size="20" type="text" required /><br>
+
+    <label for="lead_source">Origem do Lead:</label>
+    <select id="lead_source" name="lead_source">
+      <option value="">-- Selecione --</option>
+      <option value="Web">Web</option>
+      <option value="Phone Inquiry">Phone Inquiry</option>
+      <option value="Partner Referral">Partner Referral</option>
+      <option value="Purchased List">Purchased List</option>
+      <option value="Other">Other</option>
+      <option value="Sites">Sites</option>
+      <option value="Social_Networks">Redes Sociais</option>
+      <option value="Acquired_List">Lista Adquirida</option>
+    </select><br>
+
+    <input type="submit" value="Enviar" name="submit">
+  </form>
+</body>
+
+</html>
