@@ -10,17 +10,13 @@
 
 <body>
   <main>
-
     <section class="custom-container-register">
-
       <h2 class="title-register">Realizar cadastro</h2>
       <form class="form-box-register"
-        action=" https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Daj000005jLod"
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Daj000005jLod"
         method="POST">
-
         <input type="hidden" name="oid" value="00Daj000005jLod">
         <input type="hidden" name="retURL" value="http://www.google.com">
-
         <div class="custom-input-group ">
           <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Primeiro Nome" />
         </div>
@@ -31,41 +27,33 @@
         <div class="custom-input-group">
           <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email" />
         </div>
-
         <div class="custom-input-group">
           <label for="phone">Telefone</label><input id="phone" maxlength="40" name="phone" size="20" type="text" />
         </div>
-
         <div class="custom-input-group">
           <label for="mobile">Celular</label><input id="mobile" maxlength="40" name="mobile" size="20" type="text" />
         </div>
-
         <div class="custom-input-group ">
-          <input id="company" maxlength="40" name="company" size="20" type="text" required
-            onchange="toggleDocumentType()" required placeholder="Empresa *" />
+          <input id="company" maxlength="40" name="company" size="20" type="text" required placeholder="Empresa *" />
         </div>
         <div class="custom-input-group ">
-          <select id="lead_type" name="lead_type" required>
-            <option value="">-- Selecione --</option>
+          <select id="lead_type" name="lead_type" required onchange="toggleCPF_CNPJ()">
+            <option value="">Tipo de lead</option>
             <option value="Pessoa Física">Pessoa Física</option>
             <option value="Pessoa Jurídica">Pessoa Jurídica</option>
           </select>
         </div>
-
         <div class="custom-input-group ">
-          <input id="cpf" maxlength="16" name="cpf" size="20" type="text" required placeholder="CPF *"
+          <input id="00Naj000001wLza" maxlength="16" name="00Naj000001wLza" size="20" type="text" placeholder="CPF *"
             style="display: none;" />
         </div>
-
         <div class="custom-input-group">
-          <input id="00Naj000001wJks" maxlength="18" name="00Naj000001wJks" size="20" type="text" required
-            placeholder="CNPJ:*" style="display: none;" />
+          <input id="00Naj000001wJks" maxlength="18" name="00Naj000001wJks" size="20" type="text" placeholder="CNPJ:*"
+            style="display: none;" />
         </div>
-
         <div class="custom-input-group ">
           <input id="country" maxlength="40" name="country" size="20" type="text" required placeholder="País *" />
         </div>
-
         <div class="custom-input-group ">
           <select id="lead_source" name="lead_source">
             <option value="">-- Selecione --</option>
@@ -79,13 +67,13 @@
             <option value="Acquired_List">Lista Adquirida</option>
           </select>
         </div>
-
         <div class="custom-input-group ">
           <button class="bctn-register" type="submit" value="Enviar" name="submit">Cadastrar</button>
         </div>
       </form>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>

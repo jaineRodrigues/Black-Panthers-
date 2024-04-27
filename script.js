@@ -4,25 +4,18 @@ document.querySelector('#menu-btn').onclick = () => {
   navbar.classList.toggle('active');
 }
 
-function toggleDocumentType() {
-  var selectedValue = document.getElementById('lead_type').value;
-  var cpfField = document.getElementById('cpf');
-  var cnpjField = document.getElementById('cnpj');
+function toggleCPF_CNPJ() {
+  var leadType = document.getElementById("lead_type").value;
+  var cpfField = document.getElementById("00Naj000001wLza");
+  var cnpjField = document.getElementById("00Naj000001wJks");
 
-  if (selectedValue === 'Pessoa Física') {
-    cpfField.style.display = 'block';
-    cnpjField.style.display = 'none';
-    cpfField.required = true;
-    cnpjField.required = false;
-  } else if (selectedValue === 'Pessoa Jurídica') {
-    cpfField.style.display = 'none';
-    cnpjField.style.display = 'block';
-    cpfField.required = false;
-    cnpjField.required = true;
-  } else {
-    cpfField.style.display = 'none';
-    cnpjField.style.display = 'none';
-    cpfField.required = false;
-    cnpjField.required = false;
+  if (leadType === "Pessoa Física") {
+    cpfField.style.display = "block";
+    cnpjField.style.display = "none";
+  } else if (leadType === "Pessoa Jurídica") {
+    cpfField.style.display = "none";
+    cnpjField.style.display = "block";
   }
 }
+
+document.getElementById("lead_type").addEventListener("change", toggleCPF_CNPJ);
