@@ -54,7 +54,7 @@ main {
 .custom-input-group select {
   width: 100%;
   border-radius: 4px;
-  height: 3rem;
+  height: 4rem;
   border: 1px solid #92909b;
   font-size: 1.1rem;
   transition: border-color 0.4s ease;
@@ -72,7 +72,7 @@ main {
   transition: 0.3s ease-in-out;
   float: right;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .bctn-register:hover {
@@ -82,7 +82,7 @@ main {
 
 @media (max-width: 768px) {
   .custom-container-register {
-    width: 50%;
+    width: 80%;
   }
 
   .content-container {
@@ -94,14 +94,10 @@ main {
     width: 100%;
   }
 
-  .form-box-register h1 {
-    font-size: 1.5rem;
-  }
-
   .custom-input-group input,
   .custom-input-group button,
   .custom-input-group select {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .custom-input-group select option {
@@ -111,6 +107,36 @@ main {
 
 @media (max-width: 545px) {
   .custom-container-register {
-    width: 80%;
+    width: 100%;
+  }
+
+  .title-register {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .title-register {
+    font-size: 3rem;
+  }
+
+  .custom-input-group input,
+  .custom-input-group button,
+  .custom-input-group select {
+    font-size: 2rem;
+  }
+
+  .custom-input-group input,
+  .custom-input-group select {
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 6px;
+  }
+
+  .bctn-register {
+    font-weight: 400;
+    font-size: 3rem;
+    padding: 1.4rem 5rem;
+    border-radius: 6px;
   }
 }
